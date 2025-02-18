@@ -1,8 +1,8 @@
-export default function BlogPost() {
+export default function BlogPost({ params }) {
     return (
         <main>
             <h1>Post Title</h1>
-            <p>This is a post.</p>
+            <p>{params.slug}</p>
         </main>
     )
 }
